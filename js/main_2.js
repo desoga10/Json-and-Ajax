@@ -3,7 +3,10 @@ var btn = document.getElementById('button');
 
 btn.addEventListener('click', function() {
   var myRequest = new XMLHttpRequest();
-  myRequest.open('GET', 'https://jsonplaceholder.typicode.com/users');
+  myRequest.open(
+    'GET',
+    'https://learnWebCode.github.io/json-example/animals-1.json'
+  );
   myRequest.onload = function() {
     var myData = JSON.parse(myRequest.responseText);
     renderHTML(myData);
