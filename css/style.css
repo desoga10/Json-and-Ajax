@@ -1,16 +1,24 @@
 body {
   background: #f1c40f;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-weight: 600;
 }
 
+#head {
+  padding: 100px;
+  text-align: center;
+}
 #button {
   background: #3498db;
   width: 180px;
   padding: 4px 0;
-
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%);
+  position: relative;
+  margin: 5% auto;
   border-radius: 3px;
 }
 
@@ -42,4 +50,10 @@ p:after {
   background-color: darken(#f1c40f, 20%);
   opacity: 0.4;
   bottom: -30px;
+}
+
+#users-info {
+  color: #fff;
+  margin: 120px;
+  padding: -15%;
 }
