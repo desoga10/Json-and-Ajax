@@ -22,6 +22,10 @@ body {
   border-radius: 3px;
 }
 
+.hide-me {
+  display: none;
+}
+
 h1 {
   text-align: center;
   color: aliceblue;

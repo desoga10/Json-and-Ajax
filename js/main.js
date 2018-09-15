@@ -19,5 +19,5 @@ function renderHTML(data) {
       '<p>' + data[i].name + ' is number ' + data[i].id + ' .</p>' + '<br>';
   }
 
-  userInfo.insertAdjacentText('beforeend', htmlString);
+  userInfo.insertAdjacentHTML('beforeend', htmlString);
 }
